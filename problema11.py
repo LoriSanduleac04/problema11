@@ -62,25 +62,24 @@ k=a
 randomvar=a[0]
 ind = a.index(min(a))
 k[:1]=[min(k)]
-
 print(k)
 print('l)  înlocuieşte componenta de valoare minimă din tabloul respectiv cu prima componentă a acestuia;')
 k[ind]=randomvar
 print(k)
 print('m)  creează un tablou nou, format doar din componentele pare ale tabloului introdus de la tastatură;')
-even = []
+ev = []
 for i in a:
-    if i % 2 == 0:
-        even.append(i)
-print(even)
+    if i%2==0:
+        ev.append(i)
+print(ev)
 print('n)  creează un tablou nou, format doar din componentele divizibile cu 3 ale tabloului introdus de la tastatură;')
-en = []
+ep = []
 for i in a:
-    if i % 3 == 0:
-        en.append(i)
-print(en)
+    if i%3==0:
+        ep.append(i)
+print(ep)
 print('o)  creează un tablou nou, format doar din acele componente ale tabloului in-trodus de la tastatură care au cel mult patru divizori.')
-h = []
+h=[]
 for i in a:
     counter = 0
     for b in range(1,i):
